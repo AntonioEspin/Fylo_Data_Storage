@@ -159,3 +159,72 @@ html {
 .attribution a {
   color: var(--Grayish-blue);
 }
+
+/* Media Queries */
+
+@media (min-width: 660px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container__images {
+    width: 25.5rem;
+    margin-right: 3rem;
+  }
+
+  .container__info {
+    width: 30.5rem;
+  }
+
+  .memory-data {
+    top: 2.7px;
+  }
+
+  .memory-left {
+    left: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: var(--Very-dark-blue);
+    background-image: url("../images/bg-desktop.png");
+    background-position-y: bottom;
+    background-size: inherit;
+  }
+
+  .container__images {
+    width: 32.5rem;
+    margin-right: 5rem;
+  }
+
+  .container__info {
+    width: 55.5rem;
+    margin-top: 3rem;
+    padding: 5rem 4.5rem 5rem;
+  }
+
+  .information {
+    text-align: inherit;
+  }
+
+  .memory-left {
+    top: -5.5rem;
+    right: 3.5rem;
+    left: auto;
+    border-radius: 1rem 1rem 0 1rem;
+  }
+
+  .memory-left:before {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 14px solid white;
+    border-top: 15px solid white;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+}
