@@ -190,6 +190,7 @@ html {
     background-color: var(--Very-dark-blue);
     background-image: url("../images/bg-desktop.png");
     background-position-y: bottom;
+    background-position-x: center;
     background-size: inherit;
   }
 
